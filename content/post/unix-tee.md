@@ -43,7 +43,7 @@ To use `tee` and append to a file rather use the `-a` option.
 
 As data flows through UNIX pipelines it can be useful to take a snapshot of the state of the data. This can be for debugging purposes or to take a backup.
 
-    ls ~/ | tee pipe1.txt | grep ^b | tee pipe2.txt | sort -r
+    ls -a ~/ | tee pipe1.txt | grep ^.b | tee pipe2.txt | sort -r
 
 ## How to watch log files and write to a file
 
